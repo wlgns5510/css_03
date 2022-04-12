@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+		/* clearfix */
+			.clearfix{*zoom:1;}
+			.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+			.clearfix:after {clear: both;}
+		
+			.box-gray{
+				width: 850px;
+				background-color: #bcbcbc;
+			}
+			.box-blue{
+				background-color: #0000ff;
+				width: 100px;
+				float: left;
+			}
+			.box-green{
+				background-color: #00ff00;
+				width: 100px;
+				float: left;
+			}
+			.box-red{
+				width: 900px;
+				background-color: #ff0000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box-gray clearfix">
+			<div class="box-blue">파란색</div>
+			<div class="box-green">초록색</div>
+		</div>
+		<div class="box-red">빨간색</div>
+	</body>
+</html>
